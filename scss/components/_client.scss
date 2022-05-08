@@ -1,0 +1,35 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client__list {
+    @extend %ul;
+    display: flex;
+    margin-top: 50px;
+}
+
+.client__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client__link {
+    @extend %a;
+    @extend %flex;
+    width: 170px;
+    height: 92px;
+    color: $color-client;
+    border: 1px solid $color-client;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            border: 1px solid $activ-color;
+            color: $activ-color;
+        }
+}
+.client__logo {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

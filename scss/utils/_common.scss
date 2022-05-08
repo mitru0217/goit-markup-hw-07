@@ -9,7 +9,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+.title {
+    @extend %h2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
 }
