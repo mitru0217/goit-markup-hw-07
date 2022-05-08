@@ -1,0 +1,23 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $background-color;
+}
+.hero__overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hero__title {
+    @extend %h1;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    text-align: center;
+}
