@@ -3,13 +3,10 @@
     padding-bottom: 94px;
 }
 .description__list {
-    @extend %ul;
+     @extend %ul;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-}
-.description__item {
-    display: flex;
 }
 .description__position {
     position: relative;
